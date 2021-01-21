@@ -12,5 +12,10 @@
 # Choose a version of MATLAB by loading a module:
 module load matlab/2018a
 
+# Create temporary job info location (this is not necessary for the test job but can be really helpful in other ocations)
+mkdir -p /scratch/$USER/$SLURM_JOB_ID
+
 srun matlab -nodisplay -r "CC_test"
 
+# Cleanup (only needed when scratch directory was created earlier)
+rm -rf /scratch/$USER/$SLURM_JOB_ID
