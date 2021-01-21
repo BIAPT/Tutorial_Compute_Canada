@@ -12,10 +12,5 @@
 # Choose a version of MATLAB by loading a module:
 module load matlab/2018a
 
-# Create temporary job info location
-mkdir -p /scratch/$USER/$SLURM_JOB_ID
-
 srun matlab -nodisplay -r "CC_test"
 
-# Cleanup
-rm -rf /scratch/$USER/$SLURM_JOB_ID
