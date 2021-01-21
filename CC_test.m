@@ -1,5 +1,5 @@
 
-ToPrint = "your first job on Compute canada was executed successfully !";
+ToPrint = "your first job on Compute Canada was executed successfully !";
 
 disp(ToPrint)
 
