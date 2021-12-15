@@ -10,7 +10,7 @@
 #SBATCH --mail-type=ALL
 
 # Choose a version of MATLAB by loading a module:
-module load matlab/2018a
+module load matlab
 
 # Create temporary job info location (this is not necessary for the test job but can be really helpful in other ocations)
 mkdir -p /scratch/$USER/$SLURM_JOB_ID
