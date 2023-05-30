@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=4      # adjust this if you are using parallel commands
 #SBATCH --mem=1000         # adjust this according to the memory requirement per node you need (this is MegaByte)
-#SBATCH --mail-user=kira.dolhan@mail.mcgill.ca
+#SBATCH --mail-user=youremail.mcgill.ca
 #SBATCH --mail-type=ALL
 
 # Explain what to do
